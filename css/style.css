@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #463f3aff;
+  background-color: #f4f3eeff;
+  font-family: Martel, serif;
+  font-weight: 400;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.intro__logo {
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */

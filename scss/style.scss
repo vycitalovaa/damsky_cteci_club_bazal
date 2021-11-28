@@ -1,0 +1,31 @@
+$dark-lava: #463f3aff;
+$middle-grey: #8a817cff;
+$pale-silver: #bcb8b1ff;
+$alabaster: #f4f3eeff;
+$melon: #e0afa0ff;
+$gap: 20px;
+$main-font: Martel, serif;
+
+html {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  color: $dark-lava;
+  background-color: $alabaster;
+  font-family: $main-font;
+  font-weight: 400;
+  padding: 20px;
+  margin: 0;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+h2 {font-size: 32px;
+font-weight: 600;}
+h3 {font-size: 24px;
+font-weight: 600;}
+
+.intro__logo 
+{width: 100px;}
