@@ -13,13 +13,15 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 h3 {
@@ -28,24 +30,88 @@ h3 {
 }
 
 .intro {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: auto;
-  gap: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .intro__logo {
-  width: 200px;
-  height: 100px;
-  grid-column: 1/2;
-  grid-row: 1/-1;
+  flex: 0 1 15%;
+  margin-right: 5%;
 }
 
 .intro__title {
-  grid-column: 2/3;
-  grid-row: 1/-1;
+  flex: 0 1 80%;
 }
 
 .intro__image img {
   width: 100%;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+
+.nav__href {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: #463f3aff;
+}
+
+.nav__item {
+  flex: 0 1 20%;
+  font-size: 16px;
+  margin: 0 5% 0 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.nav__item::last-child {
+  margin-right: 0;
+}
+
+.motto {
+  background-image: url("images\book-open.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f4f3eeff;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .container .nav__item::last-child {
+    margin-right: 2%;
+  }
+
+  .intro {
+    flex: 0 1 40%;
+    margin-right: 2%;
+  }
+
+  .nav__menu {
+    flex: 0 1 58%;
+  }
+}
+.book__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px auto;
+}
+
+.footer {
+  background-color: #8a817cff;
+  color: #f4f3eeff;
+  font-size: 16px;
+  text-align: center;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
