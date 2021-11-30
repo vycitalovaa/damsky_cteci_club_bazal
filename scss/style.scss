@@ -23,14 +23,18 @@ h1 {
   font-size: 20px;
   font-weight: 600;
   font-family: $special;
+  @media screen and (min-width: 960px){
+    font-size: 36px;
+    
+  }
 }
 h2 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   font-family: $special;
 }
 h3 {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
 }
 .intro {
@@ -75,13 +79,6 @@ h3 {
 .nav__item::last-child {
   margin-right: 0;
 }
-.motto {
-  background-image: url("images\book-open.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: $alabaster;
-  font-weight: 600;
-}
 @media screen and (min-width: 768px) {
   .container {
     display: flex;
@@ -99,7 +96,31 @@ h3 {
     flex: 0 1 58%;
   }
 }
-
+.motto {
+  background-image: url("/images/book-open.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $alabaster;
+  font-weight: 600;
+  height: 300px;
+}
+.motto-button {
+  font-weight: 600;
+  font-family: $special;
+  border: 2px solid $dark-lava;
+  background-color: $melon;
+  width: 50px;
+  padding: 20px 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.description__title {
+  text-align: center;
+}
+.description__text {
+  text-align: center;
+}
 .book__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
